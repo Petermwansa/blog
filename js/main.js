@@ -27,3 +27,23 @@ let header = document.querySelector("header");
 window.addEventListener("scroll", () => {
     header.classList.toggle("shadow", window.scrollY > 0)
 })
+
+
+
+// for the dark/light modes 
+
+lightDarkThemes = () =>{
+    let icon = document.getElementById("icon");
+
+    icon.onclick = () => {
+        document.body.classList.toggle("dark__theme")
+        if (document.classList.contains("dark__theme")) {
+            icon.src = "/img/dark theme icon/moon.png";
+        } else {
+            icon.src = "/img/dark theme icon/sun.png";
+        }
+    }
+}
+
+lightDarkThemes();
+ 

@@ -18,6 +18,10 @@
     --text-color: #172317;
     --bg-color: #ffff;
 }
+.dark__theme{
+    --bg-color:#1a1e21;
+    --text-color:#ffff;
+}
 
 ::selection {
     color: var(--bg-color);
@@ -91,11 +95,18 @@ header.shadow .logo {
     border-radius: 4px;
     background: var(--second-color);
     color: var(--bg-color);
+    flex: 1;
+    text-align: right;
 }
 
 .login:hover {
     background: hsl(24, 98%, 58%);
     transition: .3s;
+}
+
+#icon {
+    width: 30px;
+    cursor: pointer;
 }
 
 
